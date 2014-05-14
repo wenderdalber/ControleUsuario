@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Logado";
+}
+
+<h2>Olá @Session["Nome"], seja bem-vindo ao nosso sistema!</h2>
+<label class="sair">
+    @Html.ActionLink("Sair", "Sair", new { nomeArquivo = "" }, new { @class = "btn btn-danger" })
+</label>
+

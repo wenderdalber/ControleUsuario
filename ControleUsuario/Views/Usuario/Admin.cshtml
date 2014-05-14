@@ -1,0 +1,10 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+}
+
+<h2>Olá @Session["Nome"], você é um administrador no sistema!</h2>
+<label class="sair">
+    @Html.ActionLink("Sair", "Sair", new { nomeArquivo = "" }, new { @class = "btn btn-danger" })
+</label>
+
